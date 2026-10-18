@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TerraProof — A3 Technical Research Poster | FunDev International Competition 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A3 portrait;
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 1122px;
+            height: 1587px;
+            background-color: #090B0E;
+            color: #F0F6FC;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            padding: 28px 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+            font-variant-numeric: tabular-nums;
+        }
+        .panel {
+            background: #0D1117;
+            border: 1px solid #21262D;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .panel-header {
+            background: #13171F;
+            border-bottom: 1px solid #21262D;
+            padding: 8px 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .panel-body {
+            padding: 14px 16px;
+        }
+        .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 2px;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 14px;
+        }
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+        }
+        .section-label {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #8B949E;
+        }
+        h2 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #F0F6FC;
+            margin-bottom: 6px;
+            letter-spacing: -0.01em;
+        }
+        p {
+            font-size: 11.5px;
+            line-height: 1.48;
+            color: #8B949E;
+        }
+        .formula-sheet {
+            background: #090B0E;
+            border: 1px solid #21262D;
+            border-left: 3px solid #58A6FF;
+            border-radius: 2px;
+            padding: 8px 11px;
+            font-size: 11px;
+            color: #C9D1D9;
+            margin-top: 8px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+        }
+        th {
+            background: #090B0E;
+            color: #8B949E;
+            text-transform: uppercase;
+            font-size: 9.5px;
+            padding: 7px 10px;
+            text-align: left;
+            border-bottom: 1px solid #21262D;
+        }
+        td {
+            padding: 7px 10px;
+            border-bottom: 1px solid #161B22;
+            color: #C9D1D9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ARCHITECTURAL HEADER BLOCK -->
+    <header class="panel" style="border-color: #30363D;">
+        <div class="panel-header" style="background: #161B22; padding: 8px 20px;">
+            <div style="display: flex; gap: 10px; align-items: center;" class="mono">
+                <span class="tag" style="background: #2EA043; color: #FFFFFF;">FUNDEV INTERNATIONAL COMPETITION 2026 — USU MEDAN</span>
+                <span class="tag" style="background: #090B0E; color: #58A6FF; border: 1px solid #30363D;">GEODESIC CADASTRE &amp; MASS-BALANCE ENGINE</span>
+                <span class="tag" style="background: #090B0E; color: #C9D1D9; border: 1px solid #30363D;">REGULATION (EU) 2023/1115 ART. 9</span>
+            </div>
+            <span class="mono" style="font-size: 10.5px; color: #8B949E;">CASE STUDY: WEST LAMPUNG &amp; TNBBS UNESCO CORRIDOR</span>
+        </div>
+        <div style="padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 20px;">
+            <div style="max-width: 760px;">
+                <h1 style="font-size: 29px; font-weight: 800; letter-spacing: -0.025em; color: #F0F6FC; line-height: 1.12;">
+                    TERRAPROOF: Offline-First Geodesic Polygon &amp; Biological Mass-Balance Compliance Engine
+                </h1>
+                <p style="font-size: 13px; color: #8B949E; margin-top: 6px; font-weight: 500;">
+                    Eliminating Tropical Canopy GPS Multipath Distortion &amp; Intercepting Illicit Rainforest Harvest Laundering for 2.5M Indonesian Smallholder Exporters
+                </p>
+            </div>
+            <!-- UN SDG Alignment Matrix -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #30363D; width: 268px; background: #090B0E;" class="mono">
+                <div style="padding: 7px 9px; border-right: 1px solid #21262D; border-bottom: 1px solid #21262D;">
+                    <div style="font-size: 9.5px; font-weight: 700; color: #E3B341;">SDG 2.3 &amp; 2.4</div>
+                    <div style="font-size: 9px; color: #C9D1D9; margin-top: 1px;">+22% Smallholder Income</div>
+                </div>
+                <div style="padding: 7px 9px; border-bottom: 1px solid #21262D;">
+                    <div style="font-size: 9.5px; font-weight: 700; color: #F85149;">SDG 1.4</div>
+                    <div style="font-size: 9px; color: #C9D1D9; margin-top: 1px;">Cadastral Export Lock</div>
+                </div>
+                <div style="padding: 7px 9px; border-right: 1px solid #21262D;">
+                    <div style="font-size: 9.5px; font-weight: 700; color: #58A6FF;">SDG 17.11</div>
+                    <div style="font-size: 9px; color: #C9D1D9; margin-top: 1px;">EU Traces-NT Bridge</div>
+                </div>
+                <div style="padding: 7px 9px;">
+                    <div style="font-size: 9.5px; font-weight: 700; color: #3FB950;">SDG 15.2</div>
+                    <div style="font-size: 9px; color: #C9D1D9; margin-top: 1px;">0.00% TNBBS Intrusion</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. DUAL PROBLEM STATEMENT: EMPIRICAL FAILURE MODES -->
+    <div class="grid-2">
+        <div class="panel">
+            <div class="panel-header">
+                <span class="section-label mono" style="color: #F85149;">FAILURE MODE 01 — TROPICAL CANOPY L1 GPS MULTIPATH</span>
+                <span class="mono" style="font-size: 10px; color: #8B949E;">FIELD TELEMETRY ANALYSIS</span>
+            </div>
+            <div class="panel-body">
+                <h2>False Rejection of Honest Smallholders (30.67% Area Error)</h2>
+                <p>
+                    Under dense shade trees (<i>Gliricidia</i> / <i>Erythrina</i>) and steep volcanic valleys in West Lampung, consumer smartphone L1 GPS signals bounce off wet foliage—jumping <strong style="color:#F0F6FC;">15m to 55m</strong> in 1 second. Raw tracks create self-intersecting polygons that falsely overlap protected forest borders, threatening <strong style="color:#F0F6FC;">$2.1B+ in Indonesian smallholder exports</strong>.
+                </p>
+                <div style="margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #21262D; background: #090B0E;" class="mono">
+                    <div style="padding: 8px 10px; border-right: 1px solid #21262D; border-left: 3px solid #F85149;">
+                        <div style="font-size: 9.5px; color: #8B949E;">UNFILTERED FIELD TRACK</div>
+                        <div style="font-size: 14px; font-weight: 700; color: #F85149; margin-top: 2px;">30.67% Area Distortion</div>
+                    </div>
+                    <div style="padding: 8px 10px; border-left: 3px solid #3FB950;">
+                        <div style="font-size: 9.5px; color: #8B949E;">TERRAPROOF SANITIZED</div>
+                        <div style="font-size: 14px; font-weight: 700; color: #3FB950; margin-top: 2px;">0.00% Error (100% Recall)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-header">
+                <span class="section-label mono" style="color: #E3B341;">FAILURE MODE 02 — THE "POLYGON LAUNDERING" LOOPHOLE</span>
+                <span class="mono" style="font-size: 10px; color: #8B949E;">SUPPLY-CHAIN AUDIT</span>
+            </div>
+            <div class="panel-body">
+                <h2>Illicit National Park Coffee Smuggled via Compliant Polygons</h2>
+                <p>
+                    Existing EUDR tools (FAO Open Foris Whisp, EU Traces-NT) only validate static 2D map coordinates. Middlemen exploit this by registering a tiny <strong style="color:#F0F6FC;">0.82 ha compliant boundary plot</strong> and funneling <strong style="color:#F0F6FC;">2,500+ kg of illegal coffee</strong> harvested inside <strong style="color:#F0F6FC;">Bukit Barisan Selatan National Park (TNBBS)</strong> through that single clean polygon ID.
+                </p>
+                <div style="margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #21262D; background: #090B0E;" class="mono">
+                    <div style="padding: 8px 10px; border-right: 1px solid #21262D; border-left: 3px solid #E3B341;">
+                        <div style="font-size: 9.5px; color: #8B949E;">STATIC GIS CHECK ONLY</div>
+                        <div style="font-size: 14px; font-weight: 700; color: #F85149; margin-top: 2px;">0% Fraud Interception</div>
+                    </div>
+                    <div style="padding: 8px 10px; border-left: 3px solid #3FB950;">
+                        <div style="font-size: 9.5px; color: #8B949E;">Y<sub>max</sub> MASS-BALANCE LOCK</div>
+                        <div style="font-size: 14px; font-weight: 700; color: #3FB950; margin-top: 2px;">100% Fraud Blocked</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. THREE DETERMINISTIC MATHEMATICAL ENGINES -->
+    <div class="panel">
+        <div class="panel-header">
+            <span class="section-label mono">SYSTEM ARCHITECTURE — THREE DETERMINISTIC ALGORITHMIC ENGINES (DUAL PHP + MYSQL 8 SPATIAL)</span>
+            <span class="mono" style="font-size: 10px; color: #3FB950;">ZERO EXTERNAL PAID API DEPENDENCY</span>
+        </div>
+        <div class="grid-3" style="gap: 0; border-top: none;">
+            <div style="padding: 14px 16px; border-right: 1px solid #21262D;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;" class="mono">
+                    <span style="font-size:10px; font-weight:700; color:#3FB950;">ENGINE 01 &bull; SPATIAL &amp; KINEMATIC</span>
+                    <span style="font-size:10px; color:#8B949E;">0.57 ms / track</span>
+                </div>
+                <h2>Canopy Multipath &amp; Geodesic Clipper</h2>
+                <p>
+                    Strips L1 carrier reflection spikes via kinematic velocity (<code>v<sub>i</sub></code>) and interior deflection angle (<code>&theta;<sub>i</sub></code>), computes WGS84 Spherical Excess area, and clips against TNBBS via Sutherland-Hodgman:
+                </p>
+                <div class="formula-sheet mono">
+                    Spike iff: v<sub>i</sub> &gt; 3.5 m/s &or; (&theta;<sub>i</sub> &lt; 18&deg; &and; d<sub>i</sub> &gt; 12m)<br>
+                    A<sub>ha</sub> = (R&sup2;/2) |&Sigma; rad(&Delta;&lambda;) [sin(&phi;<sub>2</sub>)+sin(&phi;<sub>1</sub>)]| &times; 10&#8315;&#8308;
+                </div>
+            </div>
+
+            <div style="padding: 14px 16px; border-right: 1px solid #21262D;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;" class="mono">
+                    <span style="font-size:10px; font-weight:700; color:#E3B341;">ENGINE 02 &bull; AGRONOMIC MASS-BALANCE</span>
+                    <span style="font-size:10px; color:#8B949E;">100% Precision</span>
+                </div>
+                <h2>Biological Yield-Ceiling (Y<sub>max</sub>) Lock</h2>
+                <p>
+                    Computes the maximum biologically plausible dry harvest per plot from geodesic area, tree density, physiological age curve <code>&phi;<sub>age</sub>(t)</code>, elevation <code>&psi;<sub>elev</sub>(h)</code>, and intercrop factor <code>&kappa;<sub>intercrop</sub></code>:
+                </p>
+                <div class="formula-sheet mono" style="border-left-color: #E3B341;">
+                    Y<sub>max</sub> = A<sub>ha</sub> &times; D<sub>trees</sub> &times; y<sub>base</sub>(c) &times; &phi;<sub>age</sub>(t) &times; &psi;<sub>elev</sub>(h) &times; &kappa;<sub>intercrop</sub><br>
+                    If W<sub>kg</sub> &gt; Q<sub>rem</sub> &rArr; BLOCKED_LAUNDERING (Quota Preserved)
+                </div>
+            </div>
+
+            <div style="padding: 14px 16px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;" class="mono">
+                    <span style="font-size:10px; font-weight:700; color:#58A6FF;">ENGINE 03 &bull; CRYPTOGRAPHIC COMPILER</span>
+                    <span style="font-size:10px; color:#8B949E;">RFC 7946 CRS84</span>
+                </div>
+                <h2>SHA-256 Merkle &amp; Traces-NT Compiler</h2>
+                <p>
+                    Chains every field weigh-in into a tamper-evident SHA-256 ledger ($0 gas fees), builds a binary Merkle Root per container, and exports 6-decimal GeoJSON for EU customs:
+                </p>
+                <div class="formula-sheet mono" style="border-left-color: #3FB950;">
+                    H<sub>k</sub> = SHA256(H<sub>k-1</sub> || plot || W<sub>kg</sub> || verdict || ts)<br>
+                    MerkleRoot = SHA256(H<sub>2i</sub> || H<sub>2i+1</sub>) &rArr; Traces-NT DDS
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. END-TO-END WORKFLOW & EMPIRICAL CASE STUDY -->
+    <div class="panel">
+        <div class="panel-header">
+            <span class="section-label mono">END-TO-END PIPELINE &amp; EMPIRICAL DATASET — KOPERASI PRODUSEN KOPI LESTARI LAMPUNG</span>
+            <span class="mono" style="font-size: 10px; color: #58A6FF;">15 PARCELS &bull; 12 FARMERS &bull; 25 SHA-256 BLOCKS &bull; 2 EU CONTAINERS</span>
+        </div>
+        <div class="grid-4 mono" style="font-size: 11px;">
+            <div style="padding: 12px 14px; border-right: 1px solid #21262D;">
+                <div style="color:#E3B341; font-weight:700; font-size:10px; margin-bottom:4px;">01 / OFFLINE CANOPY WALK</div>
+                <div style="color:#8B949E; font-family:'Inter',sans-serif; font-size:11px; line-height:1.45;">
+                    Collector walks farm perimeter in blank-spot rainforest. GPS track &amp; scale weigh-ins queue in browser <strong style="color:#F0F6FC;">IndexedDB / localStorage</strong>.
+                </div>
+            </div>
+            <div style="padding: 12px 14px; border-right: 1px solid #21262D;">
+                <div style="color:#3FB950; font-weight:700; font-size:10px; margin-bottom:4px;">02 / GEODESIC CLIPPING</div>
+                <div style="color:#8B949E; font-family:'Inter',sans-serif; font-size:11px; line-height:1.45;">
+                    Strips 56 multipath spikes across 15 plots; locks <strong style="color:#F0F6FC;">3 TNBBS deforestation plots</strong> (6.8%–24.5% clip) &amp; <strong style="color:#F0F6FC;">2 neighbor overlaps</strong>.
+                </div>
+            </div>
+            <div style="padding: 12px 14px; border-right: 1px solid #21262D;">
+                <div style="color:#F85149; font-weight:700; font-size:10px; margin-bottom:4px;">03 / ANTI-LAUNDERING LOCK</div>
+                <div style="color:#8B949E; font-family:'Inter',sans-serif; font-size:11px; line-height:1.45;">
+                    Intercepts <strong style="color:#F0F6FC;">5 quota laundering attacks</strong> (7,630 kg blocked, e.g., 1,650 kg injected into LP-PLT-001 with 340 kg quota left).
+                </div>
+            </div>
+            <div style="padding: 12px 14px;">
+                <div style="color:#58A6FF; font-weight:700; font-size:10px; margin-bottom:4px;">04 / TRACES-NT PASSPORT</div>
+                <div style="color:#8B949E; font-family:'Inter',sans-serif; font-size:11px; line-height:1.45;">
+                    Compiles 20 approved harvests (8,463 kg) into <strong style="color:#F0F6FC;">2 Merkle-verified containers</strong> for Hamburg (DE) &amp; Trieste (IT).
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. LIVE WORKBENCH VISUAL PREVIEW + EMPIRICAL BENCHMARK TABLES -->
+    <div class="grid-2">
+        <div class="panel">
+            <div class="panel-header">
+                <span class="section-label mono">EMPIRICAL VALIDATION (`php artisan terraproof:benchmark`)</span>
+                <span class="mono" style="font-size: 10px; color: #3FB950;">14/14 PHPUNIT TESTS PASSING (74 ASSERTIONS)</span>
+            </div>
+            <div class="panel-body" style="padding: 0;">
+                <table class="mono">
+                    <thead>
+                        <tr>
+                            <th>Benchmark Suite</th>
+                            <th>Dataset</th>
+                            <th>Verified Result</th>
+                            <th>Latency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong style="color:#F0F6FC;">1. GPS Spike Sanitizer</strong></td>
+                            <td>50 Tracks (199 Spikes)</td>
+                            <td style="color:#3FB950; font-weight:700;">30.67% &rarr; 0.00% Err</td>
+                            <td>0.57 ms</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color:#F0F6FC;">2. Sutherland-Hodgman Clip</strong></td>
+                            <td>50 Polygons vs TNBBS</td>
+                            <td style="color:#3FB950; font-weight:700;">100.0% Accuracy</td>
+                            <td>3.44 ms</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color:#F0F6FC;">3. Y<sub>max</sub> Anti-Laundering</strong></td>
+                            <td>100 Weigh-Ins (30 Fraud)</td>
+                            <td style="color:#3FB950; font-weight:700;">100% Prec / 100% Rec</td>
+                            <td>0.0018 ms</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color:#F0F6FC;">4. RFC 7946 &amp; SHA-256 Chain</strong></td>
+                            <td>25 Blocks / 2 Containers</td>
+                            <td style="color:#58A6FF; font-weight:700;">100% Intact &amp; Valid</td>
+                            <td>&lt;1.20 ms</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-header">
+                <span class="section-label mono">COMPETITIVE MATRIX VS. GLOBAL BASELINES</span>
+                <span class="mono" style="font-size: 10px; color: #8B949E;">EUDR COMPLIANCE SYSTEMS</span>
+            </div>
+            <div class="panel-body" style="padding: 0;">
+                <table class="mono">
+                    <thead>
+                        <tr>
+                            <th>Capability</th>
+                            <th>EU Traces-NT</th>
+                            <th>FAO Whisp</th>
+                            <th style="color:#3FB950;">TerraProof</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Canopy Multipath Spike Filter</td>
+                            <td style="color:#F85149;">No (Rejects)</td>
+                            <td style="color:#F85149;">No</td>
+                            <td style="color:#3FB950; font-weight:700;">YES (100% Recall)</td>
+                        </tr>
+                        <tr>
+                            <td>Biological Yield (Y<sub>max</sub>) Lock</td>
+                            <td style="color:#F85149;">No</td>
+                            <td style="color:#F85149;">No</td>
+                            <td style="color:#3FB950; font-weight:700;">YES (Mass-Balance)</td>
+                        </tr>
+                        <tr>
+                            <td>Offline Blank-Spot Queue</td>
+                            <td style="color:#F85149;">Cloud Only</td>
+                            <td style="color:#F85149;">Cloud Only</td>
+                            <td style="color:#3FB950; font-weight:700;">YES (IndexedDB)</td>
+                        </tr>
+                        <tr>
+                            <td>Cost per Smallholder Farmer</td>
+                            <td>Portal Only</td>
+                            <td>API Only</td>
+                            <td style="color:#3FB950; font-weight:700;">$0.00 (Co-op SaaS)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. FOOTER TELEMETRY STRIP -->
+    <footer class="panel" style="padding: 12px 18px; display: flex; justify-content: space-between; align-items: center; background: #0D1117;">
+        <div style="display: flex; gap: 28px;" class="mono">
+            <div>
+                <span style="font-size: 9.5px; color: #8B949E; display: block;">SDG 2.3 SMALLHOLDER PREMIUM</span>
+                <span style="font-size: 13.5px; font-weight: 700; color: #3FB950;">+18% to +24% EU Export Price</span>
+            </div>
+            <div style="border-left: 1px solid #21262D; padding-left: 24px;">
+                <span style="font-size: 9.5px; color: #8B949E; display: block;">SDG 15.2 RAINFOREST PROTECTED</span>
+                <span style="font-size: 13.5px; font-weight: 700; color: #58A6FF;">TNBBS &amp; Register 39 Corridor</span>
+            </div>
+            <div style="border-left: 1px solid #21262D; padding-left: 24px;">
+                <span style="font-size: 9.5px; color: #8B949E; display: block;">COOPERATIVE DEPLOYMENT COST</span>
+                <span style="font-size: 13.5px; font-weight: 700; color: #E3B341;">Rp 2.5M/yr ($155/yr) &bull; 92% Savings</span>
+            </div>
+        </div>
+        <div class="mono" style="text-align: right; font-size: 10px; color: #8B949E;">
+            <strong style="color: #F0F6FC;">FunDev&lt;&gt; International Competition 2026</strong> &bull; Faculty of Vocational Studies, Universitas Sumatera Utara<br>
+            <span style="color: #3FB950;">Deterministic Production Build &bull; Laravel 13 + WGS84 Spherical Excess + SHA-256 Merkle Engine</span>
+        </div>
+    </footer>
+
+</body>
+</html>

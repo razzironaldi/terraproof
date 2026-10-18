@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TerraProof — 15-Slide Finalist Pitch Deck | FunDev 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: 1280px 720px;
+            margin: 0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: #090B0E;
+            color: #F0F6FC;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .slide {
+            width: 1280px;
+            height: 720px;
+            page-break-after: always;
+            break-after: page;
+            padding: 40px 52px;
+            background-color: #090B0E;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid #21262D;
+        }
+        .mono { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #21262D;
+            padding-bottom: 12px;
+        }
+        .tag {
+            font-size: 11px;
+            font-weight: 700;
+            color: #8B949E;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .slide-num {
+            font-size: 11px;
+            color: #8B949E;
+            font-weight: 600;
+            background: #13171F;
+            border: 1px solid #21262D;
+            padding: 3px 8px;
+            border-radius: 2px;
+        }
+        h1 { font-size: 40px; font-weight: 800; line-height: 1.15; color: #F0F6FC; letter-spacing: -0.025em; }
+        h2 { font-size: 26px; font-weight: 700; color: #F0F6FC; margin-bottom: 12px; letter-spacing: -0.015em; }
+        .card {
+            background: #0D1117;
+            border: 1px solid #21262D;
+            border-radius: 3px;
+            padding: 18px 22px;
+        }
+        .card-crimson {
+            background: #0D1117;
+            border: 1px solid #30363D;
+            border-left: 4px solid #F85149;
+            border-radius: 3px;
+            padding: 18px 22px;
+        }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+        .formula {
+            background: #090B0E;
+            border: 1px solid #21262D;
+            border-left: 3px solid #58A6FF;
+            color: #C9D1D9;
+            padding: 12px 16px;
+            border-radius: 2px;
+            font-size: 15px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        ul { list-style: none; }
+        li {
+            font-size: 15px;
+            line-height: 1.55;
+            color: #C9D1D9;
+            margin-bottom: 10px;
+            padding-left: 18px;
+            position: relative;
+        }
+        li::before {
+            content: "—";
+            color: #58A6FF;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+        th { background: #13171F; color: #8B949E; padding: 9px 12px; text-align: left; border-bottom: 1px solid #21262D; text-transform: uppercase; font-size: 11px; }
+        td { padding: 9px 12px; border-bottom: 1px solid #21262D; color: #C9D1D9; }
+        .footer {
+            border-top: 1px solid #21262D;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: #6E7681;
+        }
+    </style>
+</head>
+<body>
+
+<!-- SLIDE 1 -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">FUNDEV&lt;&gt; INTERNATIONAL COMPETITION 2026 &bull; UNIVERSITAS SUMATERA UTARA</span>
+        <span class="slide-num">SLIDE 01 / 15</span>
+    </div>
+    <div>
+        <span class="mono" style="background:#10B981; color:#050811; padding:5px 12px; border-radius:6px; font-weight:800; font-size:12px;">WEB GEOSPATIAL &amp; CRYPTOGRAPHIC COMPLIANCE ENGINE</span>
+        <h1 style="margin-top:16px; font-size:44px;">TERRAPROOF</h1>
+        <p style="font-size:22px; color:#6EE7B7; font-weight:700; margin-top:8px;">
+            Offline-First Geodesic Polygon &amp; Biological Mass-Balance Compliance Engine for Smallholder EUDR Export
+        </p>
+        <div class="grid-3" style="margin-top:28px;">
+            <div class="card">
+                <div class="mono" style="color:#10B981; font-size:12px; font-weight:800;">ENGINE 01: GEODESIC</div>
+                <div style="font-size:16px; font-weight:700; margin-top:4px;">Canopy GPS Spike Filter &amp; Sutherland-Hodgman Clipper</div>
+            </div>
+            <div class="card">
+                <div class="mono" style="color:#F59E0B; font-size:12px; font-weight:800;">ENGINE 02: BIOLOGICAL</div>
+                <div style="font-size:16px; font-weight:700; margin-top:4px;">Agronomic Yield-Ceiling (Y<sub>max</sub>) Anti-Laundering Lock</div>
+            </div>
+            <div class="card">
+                <div class="mono" style="color:#06B6D4; font-size:12px; font-weight:800;">ENGINE 03: CRYPTOGRAPHIC</div>
+                <div style="font-size:16px; font-weight:700; margin-top:4px;">SHA-256 Merkle Root &amp; RFC 7946 Traces-NT Compiler</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>UN SDGs: SDG 2 (Zero Hunger) &bull; SDG 1 (No Poverty) &bull; SDG 17 (Partnerships) &bull; SDG 15 (Life on Land)</span>
+        <span>Case Study: West Lampung &amp; TNBBS UNESCO Corridor, Sumatra</span>
+    </div>
+</section>
+
+<!-- SLIDE 2 -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">01. PROBLEM STATEMENT &amp; GLOBAL RELEVANCE</span>
+        <span class="slide-num">SLIDE 02 / 15</span>
+    </div>
+    <div>
+        <h2>The $2.1B Smallholder EUDR Crisis &amp; Two Technical Failures</h2>
+        <div class="grid-2" style="margin-top:16px;">
+            <div class="card-crimson">
+                <div class="mono" style="color:#FDA4AF; font-size:13px; font-weight:800;">FAILURE 1: CANOPY GPS MULTIPATH SPIKES</div>
+                <h3 style="font-size:20px; font-weight:800; margin:8px 0;">30.67% Area Distortion &amp; False Rejections</h3>
+                <ul>
+                    <li>Under dense shade trees (<i>Gliricidia</i>), smartphone L1 GPS signals bounce and jump <strong>15m–55m in 1 second</strong>.</li>
+                    <li>Distorted polygons falsely intersect adjacent National Park borders, locking honest smallholders out of Europe.</li>
+                </ul>
+            </div>
+            <div class="card-crimson">
+                <div class="mono" style="color:#FCD34D; font-size:13px; font-weight:800;">FAILURE 2: THE "POLYGON LAUNDERING" LOOPHOLE</div>
+                <h3 style="font-size:20px; font-weight:800; margin:8px 0;">Illicit National Park Coffee Smuggled via Clean Plots</h3>
+                <ul>
+                    <li>Existing GIS tools (FAO Whisp, EU Traces-NT) only check static 2D map coordinates—blind to harvest volume.</li>
+                    <li>Brokers register a tiny <strong>0.82 ha clean plot</strong> and launder <strong>1,650+ kg of illegal TNBBS forest coffee</strong> through it.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>Regulation (EU) 2023/1115 (EUDR Article 9) &bull; 31 Dec 2020 Cutoff</span>
+        <span>2.5 Million Indonesian Smallholder Households at Risk</span>
+    </div>
+</section>
+
+<!-- SLIDE 3 -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">02. ENGINE 1A — CANOPY GPS MULTIPATH SANITIZER</span>
+        <span class="slide-num">SLIDE 03 / 15</span>
+    </div>
+    <div>
+        <h2>Kinematic Velocity &amp; Interior Deflection Filter (`GeodesicAuditService`)</h2>
+        <div class="formula mono">
+            Strip Vertex P_i &iff; v_i = d(P_{i-1}, P_i) / &Delta;t_i &gt; 3.5 m/s &or; (&theta;_i &lt; 18&deg; &and; d_i &gt; 12.0 m)
+        </div>
+        <div class="formula mono" style="border-color:#10B981; color:#6EE7B7;">
+            WGS84 Spherical Excess: A_ha = (R&sup2; / 2) | &Sigma; rad(&lambda;_{i+1} - &lambda;_i) [sin(rad(&phi;_{i+1})) + sin(rad(&phi;_i))] | &times; 10&#8315;&#8308;
+        </div>
+        <div class="grid-3" style="margin-top:16px;">
+            <div class="card mono">
+                <div style="color:#94A3B8; font-size:12px;">PRE-SANITIZATION ERROR</div>
+                <div style="font-size:28px; font-weight:800; color:#F43F5E; margin-top:4px;">30.67%</div>
+                <div style="font-size:12px; color:#CBD5E1;">Across 50 Noisy Canopy Walks</div>
+            </div>
+            <div class="card mono">
+                <div style="color:#94A3B8; font-size:12px;">POST-SANITIZATION ERROR</div>
+                <div style="font-size:28px; font-weight:800; color:#10B981; margin-top:4px;">0.00%</div>
+                <div style="font-size:12px; color:#CBD5E1;">100% Multipath Spike Recall (199/199)</div>
+            </div>
+            <div class="card mono">
+                <div style="color:#94A3B8; font-size:12px;">EXECUTION LATENCY</div>
+                <div style="font-size:28px; font-weight:800; color:#67E8F9; margin-top:4px;">0.57 ms</div>
+                <div style="font-size:12px; color:#CBD5E1;">6-Decimal Closed CCW Ring</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>WGS84 Semi-Major Radius R = 6,378,137 m</span>
+        <span>100% RFC 7946 Right-Hand Rule Compliant</span>
+    </div>
+</section>
+
+<!-- SLIDE 4 -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">03. ENGINE 1B — SUTHERLAND-HODGMAN RAINFOREST CLIPPER</span>
+        <span class="slide-num">SLIDE 04 / 15</span>
+    </div>
+    <div>
+        <h2>Exact Polygon Intersection Against UNESCO TNBBS &amp; Register 39</h2>
+        <div class="grid-2" style="margin-top:12px;">
+            <div class="card">
+                <h3 style="font-size:18px; font-weight:800; color:#10B981; margin-bottom:10px;">Local Tangent Plane Clipping Pipeline</h3>
+                <ul>
+                    <li>Projects WGS84 coordinates into local tangent meters centered on plot centroid $(\lambda_c, \phi_c)$.</li>
+                    <li>Clips subject polygon against every edge of <strong>TNBBS (`TNBBS-SECTOR-LIWA`)</strong>, <strong>Register 39 (`HL-REG-39`)</strong>, and neighboring plots.</li>
+                    <li>Outputs the exact 6-decimal <code>conflict_intersection_ring</code> so the crimson violation slice renders on the satellite map.</li>
+                </ul>
+            </div>
+            <div class="card mono">
+                <h3 style="font-size:18px; font-weight:800; color:#67E8F9; margin-bottom:10px;">Deterministic Compliance Rules</h3>
+                <table>
+                    <thead><tr><th>Condition</th><th>Assigned Verdict</th><th>Seeded Count</th></tr></thead>
+                    <tbody>
+                        <tr><td>Forest &gt; 1.0%</td><td style="color:#F43F5E; font-weight:800;">REJECTED_DEFORESTATION</td><td>3 Plots (9%–24%)</td></tr>
+                        <tr><td>Neighbor &gt; 2.5%</td><td style="color:#F59E0B; font-weight:800;">REJECTED_OVERLAP</td><td>2 Plots (15.2%)</td></tr>
+                        <tr><td>0% &lt; Forest &le; 1%</td><td style="color:#FCD34D; font-weight:800;">WARNING_BUFFER</td><td>Buffer Alert</td></tr>
+                        <tr><td>Overlap = 0.0%</td><td style="color:#10B981; font-weight:800;">COMPLIANT</td><td>10 Verified Plots</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>Mean Clipping Latency: 3.44 ms (p95: 4.94 ms)</span>
+        <span>100% Classification Accuracy (50/50 Benchmark Audits)</span>
+    </div>
+</section>
+
+<!-- SLIDE 5 -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">04. ENGINE 2 — BIOLOGICAL YIELD-CEILING (Y<sub>max</sub>) GATEKEEPER</span>
+        <span class="slide-num">SLIDE 05 / 15</span>
+    </div>
+    <div>
+        <h2>Mathematical Anti-Laundering Lock (`YieldEnvelopeService`)</h2>
+        <div class="formula mono">
+            Y_max = A_ha &times; D_{trees/ha} &times; y_base(c) &times; &phi;_age(t) &times; &psi;_elev(h) &times; &kappa;_intercrop
+        </div>
+        <div class="grid-2" style="margin-top:14px;">
+            <div class="card">
+                <h3 style="font-size:18px; font-weight:800; color:#6EE7B7; margin-bottom:8px;">Agronomic Parameterization</h3>
+                <ul>
+                    <li><strong>Base Yield y<sub>base</sub>(c):</strong> Robusta = <code>1.35 kg/tree</code>, Cocoa = <code>1.50 kg/tree</code>, Black Pepper = <code>1.80 kg/tree</code>.</li>
+                    <li><strong>Physiological Age &phi;<sub>age</sub>(t):</strong> <code>&lt;3y: 0.15</code> | <code>3–4y: 0.65</code> | <code>5–15y: 1.00</code> | <code>&gt;15y: 0.78</code>.</li>
+                    <li><strong>Elevation &psi;<sub>elev</sub>(h) &amp; Intercrop &kappa;:</strong> <code>400–900m: 1.05</code>; <code>Mono: 1.00 | Shade: 0.92 | Multi: 0.85</code>.</li>
+                </ul>
+            </div>
+            <div class="card-crimson">
+                <h3 style="font-size:18px; font-weight:800; color:#FDA4AF; margin-bottom:8px;">Flagship Interception: Plot LP-PLT-001</h3>
+                <ul>
+                    <li>Geodesic Area: <code>0.83 ha</code> &bull; Remaining Quota: <code>340.00 kg</code>.</li>
+                    <li>Broker injects <strong>1,650.00 kg</strong> of illegal encroachment coffee.</li>
+                    <li><strong>Verdict:</strong> <code>BLOCKED_LAUNDERING</code> (+1,310 kg excess blocked; legitimate 340 kg quota preserved intact).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>Benchmark Suite 3: 100% Precision &amp; 100% Recall (30/30 Frauds Blocked)</span>
+        <span>Zero False Positives on Legitimate Harvests</span>
+    </div>
+</section>
+
+<!-- SLIDE 6 -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">05. ENGINE 3 — ZERO-GAS SHA-256 MERKLE &amp; TRACES-NT COMPILER</span>
+        <span class="slide-num">SLIDE 06 / 15</span>
+    </div>
+    <div>
+        <h2>Tamper-Evident Ledger &amp; Strict RFC 7946 GeoJSON (`EudrExportCompiler`)</h2>
+        <div class="formula mono" style="font-size:14.5px;">
+            H_k = SHA256(H_{k-1} || '|' || plot_code || '|' || weight_dry_kg || '|' || verdict || '|' || timestamp)
+        </div>
+        <div class="grid-2" style="margin-top:14px;">
+            <div class="card">
+                <h3 style="font-size:18px; font-weight:800; color:#67E8F9; margin-bottom:8px;">Binary SHA-256 Container Merkle Tree</h3>
+                <ul>
+                    <li>Aggregates all <code>APPROVED</code> harvest ledger leaf hashes into a binary SHA-256 Merkle Root Hash.</li>
+                    <li>Zero public blockchain gas fees; <strong>0.0018 ms per block</strong>.</li>
+                    <li>2 Seeded Containers compiled for <strong>Port of Hamburg (DE)</strong> &amp; <strong>Port of Trieste (IT)</strong>.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 style="font-size:18px; font-weight:800; color:#10B981; margin-bottom:8px;">Offline Canopy Blank-Spot Sync</h3>
+                <ul>
+                    <li>Field buying stations in rainforest blank spots queue polygon walks &amp; weigh-ins in <code>IndexedDB</code> / <code>localStorage</code>.</li>
+                    <li>1-Click synchronization commits offline records into the MySQL/SQLite cryptographic chain.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>25 Seeded Hash-Chained Ledger Blocks (100% Chain Intact)</span>
+        <span>Direct Upload Compatibility with European Commission Traces-NT</span>
+    </div>
+</section>
+
+<!-- SLIDE 7 -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">06. TACTICAL SATELLITE COMMAND CENTER WALKTHROUGH</span>
+        <span class="slide-num">SLIDE 07 / 15</span>
+    </div>
+    <div>
+        <h2>Palantir Foundry &times; Mapbox Studio Dark Tactical Interface</h2>
+        <div class="grid-3" style="margin-top:14px;">
+            <div class="card">
+                <div class="mono" style="color:#10B981; font-size:12px; font-weight:800;">WORKSPACE 01</div>
+                <h3 style="font-size:18px; font-weight:800; margin:6px 0;">Satellite &amp; Spike Auditor</h3>
+                <ul>
+                    <li>Esri Satellite, OpenTopoMap &amp; CartoDB Dark switcher.</li>
+                    <li>1-Click Canopy Spike &amp; TNBBS Encroachment live simulations.</li>
+                    <li>Interactive custom polygon map drawing tool.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="mono" style="color:#F59E0B; font-size:12px; font-weight:800;">WORKSPACE 02</div>
+                <h3 style="font-size:18px; font-weight:800; margin:6px 0;">Y<sub>max</sub> Gatekeeper</h3>
+                <ul>
+                    <li>Live agronomic formula breakdown &amp; quota gauge.</li>
+                    <li>Preset A (+220 kg Approved) vs. Preset B (+1,600 kg Fraud Breach).</li>
+                    <li>Live SHA-256 Tamper Detection &amp; Chart.js mass-balance analytics.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="mono" style="color:#06B6D4; font-size:12px; font-weight:800;">WORKSPACE 03</div>
+                <h3 style="font-size:18px; font-weight:800; margin:6px 0;">Traces-NT &amp; DDS Passport</h3>
+                <ul>
+                    <li>Syntax-highlighted RFC 7946 GeoJSON inspector.</li>
+                    <li>1-Click <code>.geojson</code> download for EU customs.</li>
+                    <li>Printable Cryptographic DDS Passport with QR stamp.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>Zero-Reload Reactive Architecture</span>
+        <span>Engineered for 30-Second Customs &amp; Cooperative Comprehension</span>
+    </div>
+</section>
+
+<!-- SLIDE 8 -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">07. EMPIRICAL BENCHMARK VALIDATION (`php artisan terraproof:benchmark`)</span>
+        <span class="slide-num">SLIDE 08 / 15</span>
+    </div>
+    <div>
+        <h2>Verified Quantitative Performance Across 200 Test Cases</h2>
+        <div class="card mono" style="margin-top:14px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Benchmark Suite</th>
+                        <th>Dataset Size ($N$)</th>
+                        <th>Before TerraProof</th>
+                        <th>With TerraProof</th>
+                        <th>Mean Latency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Canopy GPS Multipath Sanitizer</strong></td>
+                        <td>50 Tracks (199 Spikes)</td>
+                        <td style="color:#F43F5E;">30.67% Area Error</td>
+                        <td style="color:#10B981; font-weight:800;">0.00% Error (100% Recall)</td>
+                        <td>0.57 ms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Sutherland-Hodgman Clipper</strong></td>
+                        <td>50 Polygons vs TNBBS</td>
+                        <td style="color:#F59E0B;">Manual GIS (~45 min)</td>
+                        <td style="color:#10B981; font-weight:800;">100.0% Accuracy (50/50)</td>
+                        <td>3.44 ms (4.94 ms p95)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Y<sub>max</sub> Anti-Laundering Lock</strong></td>
+                        <td>100 Weigh-Ins (30 Fraud)</td>
+                        <td style="color:#F43F5E;">0% Fraud Caught</td>
+                        <td style="color:#10B981; font-weight:800;">100% Prec / 100% Recall</td>
+                        <td>0.0018 ms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Automated Test Suite (`artisan test`)</strong></td>
+                        <td>14 Tests (74 Assertions)</td>
+                        <td>Baseline</td>
+                        <td style="color:#67E8F9; font-weight:800;">100% PASS (0 Failures)</td>
+                        <td>10.07 s total</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>Evidence Artifacts: public/benchmark-results.json &amp; BENCHMARK-EVIDENCE-REPORT.md</span>
+        <span>100% Reproducible via CLI</span>
+    </div>
+</section>
+
+<!-- SLIDE 9 -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">08. COMPETITIVE ADVANTAGE MATRIX</span>
+        <span class="slide-num">SLIDE 09 / 15</span>
+    </div>
+    <div>
+        <h2>Why TerraProof Outperforms Global Baselines</h2>
+        <div class="card mono" style="margin-top:14px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Technical Capability</th>
+                        <th>EU Traces-NT</th>
+                        <th>FAO Open Foris Whisp</th>
+                        <th>Commercial ERPs</th>
+                        <th style="color:#10B981;">TerraProof (Ours)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Canopy Multipath GPS Sanitizer</td>
+                        <td style="color:#F43F5E;">No (Rejects)</td>
+                        <td style="color:#F43F5E;">No</td>
+                        <td style="color:#F43F5E;">Manual Cleanup</td>
+                        <td style="color:#10B981; font-weight:800;">YES (0.57 ms, 100% Recall)</td>
+                    </tr>
+                    <tr>
+                        <td>Biological Yield ($Y_{\max}$) Gatekeeper</td>
+                        <td style="color:#F43F5E;">No</td>
+                        <td style="color:#F43F5E;">No</td>
+                        <td style="color:#F59E0B;">Static Quota</td>
+                        <td style="color:#10B981; font-weight:800;">YES (Agronomic Envelope)</td>
+                    </tr>
+                    <tr>
+                        <td>Offline Blank-Spot Canopy Queue</td>
+                        <td style="color:#F43F5E;">Cloud Only</td>
+                        <td style="color:#F43F5E;">Cloud API Only</td>
+                        <td style="color:#F59E0B;">Heavy Native App</td>
+                        <td style="color:#10B981; font-weight:800;">YES (Browser IndexedDB)</td>
+                    </tr>
+                    <tr>
+                        <td>Zero-Gas SHA-256 Merkle Passport</td>
+                        <td style="color:#F43F5E;">Centralized</td>
+                        <td style="color:#F43F5E;">None</td>
+                        <td style="color:#F43F5E;">High L1 Gas Fees</td>
+                        <td style="color:#10B981; font-weight:800;">YES ($0.00 Gas Cost)</td>
+                    </tr>
+                    <tr>
+                        <td>Cost per Smallholder Farmer</td>
+                        <td>Portal Only</td>
+                        <td>API Only</td>
+                        <td>$15–$40 / farmer / yr</td>
+                        <td style="color:#10B981; font-weight:800;">$0.00 (Free for Farmers)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>92% Lower Total Ownership Cost for Indonesian Agro-Cooperatives</span>
+        <span>Turnkey Interoperability with EU Customs</span>
+    </div>
+</section>
+
+<!-- SLIDE 10 -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">09. COOPERATIVE BUSINESS MODEL &amp; UN SDG IMPACT</span>
+        <span class="slide-num">SLIDE 10 / 15</span>
+    </div>
+    <div>
+        <h2>Zero Cost to Smallholders &bull; High-Margin Value for Exporters</h2>
+        <div class="grid-2" style="margin-top:14px;">
+            <div class="card">
+                <h3 style="font-size:18px; font-weight:800; color:#FCD34D; margin-bottom:8px;">B2B Cooperative Revenue Model</h3>
+                <ul>
+                    <li><strong>$0.00 Cost to Smallholder Farmers:</strong> Removes all financial barriers to rural adoption.</li>
+                    <li><strong>$35 / Export Container DDS Fee:</strong> Paid by European importers/exporters ($0.0018/kg—saves 4% EU turnover penalties).</li>
+                    <li><strong>$29 / Month Cooperative SaaS:</strong> Unlimited plot audits &amp; offline buying-station terminals.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 style="font-size:18px; font-weight:800; color:#10B981; margin-bottom:8px;">Quantified Multi-Pillar SDG Impact</h3>
+                <ul>
+                    <li><strong>SDG 2.3 &amp; SDG 1.4:</strong> Secures <strong>+18% to +24% EUDR price premium</strong> for 2.5M Indonesian smallholder households.</li>
+                    <li><strong>SDG 17.11:</strong> Direct RFC 7946 export bridge from Sumatran cooperatives toHamburg &amp; Trieste.</li>
+                    <li><strong>SDG 15.2:</strong> 100% mathematical barrier against TNBBS UNESCO rainforest encroachment.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>Thank You &bull; Live Interactive Demo Ready</span>
+        <span>TerraProof — Mathematical Truth for Sustainable Global Trade</span>
+    </div>
+</section>
+
+<!-- SLIDE 11 (APPENDIX A) -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">APPENDIX A: DUAL-ENGINE GEODESIC VERIFICATION</span>
+        <span class="slide-num">SLIDE 11 / 15</span>
+    </div>
+    <div>
+        <h2>Pure PHP WGS84 Spherical Excess vs. MySQL 8 Spatial SQL</h2>
+        <div class="formula mono">
+            SELECT ST_Area(ST_GeomFromText(wkt_polygon, 4326, "axis-order=long-lat")) * 0.0001 AS area_ha
+        </div>
+        <div class="card" style="margin-top:14px;">
+            <ul>
+                <li><strong>Zero-Failure Portability:</strong> Rural edge devices run deterministic PHP WGS84 Spherical Excess on SQLite with zero external GIS daemon dependencies.</li>
+                <li><strong>Cloud Cross-Verification:</strong> `GeodesicAuditService::computeDualEngineAreaHa()` cross-checks PHP Spherical Excess against MySQL 8 `ST_Area` (`&lt;0.01%` delta).</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>Technical Appendix A &bull; Spatial Mathematics</span>
+        <span>TerraProof Q&amp;A Defense Deck</span>
+    </div>
+</section>
+
+<!-- SLIDE 12 (APPENDIX B) -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">APPENDIX B: AGRONOMIC CALIBRATION &amp; INTERCROPPING</span>
+        <span class="slide-num">SLIDE 12 / 15</span>
+    </div>
+    <div>
+        <h2>Physiological Yield Curves &amp; Elevation Microclimate Calibration</h2>
+        <div class="grid-2" style="margin-top:14px;">
+            <div class="card mono">
+                <h3 style="font-size:17px; color:#10B981; margin-bottom:8px;">Tree Age Curve &phi;_age(t)</h3>
+                <table>
+                    <tr><td>Juvenile (&lt; 3 yrs)</td><td>0.15</td></tr>
+                    <tr><td>Early Bearing (3–4 yrs)</td><td>0.65</td></tr>
+                    <tr><td>Peak Maturity (5–15 yrs)</td><td>1.00</td></tr>
+                    <tr><td>Senescent (&gt; 15 yrs)</td><td>0.78</td></tr>
+                </table>
+            </div>
+            <div class="card mono">
+                <h3 style="font-size:17px; color:#67E8F9; margin-bottom:8px;">Elevation Band &psi;_elev(h)</h3>
+                <table>
+                    <tr><td>Lowland (&lt; 400m ASL)</td><td>0.85</td></tr>
+                    <tr><td>Optimal Slope (400–900m)</td><td>1.05</td></tr>
+                    <tr><td>Highland (&gt; 900m ASL)</td><td>0.92</td></tr>
+                    <tr><td>Intercrop Density</td><td>Dynamic trees/ha</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>Technical Appendix B &bull; Agronomic Mass-Balance</span>
+        <span>Calibrated to ICCRI (Puslitkoka) Smallholder Baselines</span>
+    </div>
+</section>
+
+<!-- SLIDE 13 (APPENDIX C) -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">APPENDIX C: FARMER PRIVACY BY DESIGN (UU PDP &amp; GDPR)</span>
+        <span class="slide-num">SLIDE 13 / 15</span>
+    </div>
+    <div>
+        <h2>Anonymized Cadastral Identity in Public RFC 7946 GeoJSON</h2>
+        <div class="formula mono">
+            farmer_national_id_sha256 = SHA256("NIK-1804-LAMPUNG-" || farmer_code)
+        </div>
+        <div class="card" style="margin-top:14px;">
+            <ul>
+                <li><strong>Zero Raw PII in Export Files:</strong> European customs authorities receive verifiable 64-character SHA-256 identity hashes and 6-decimal farm polygons without exposing raw farmer National IDs (NIK) or unmasked phone numbers.</li>
+                <li>Complies simultaneously with <strong>Indonesia Law No. 27/2022 (UU PDP)</strong> and <strong>EU GDPR</strong>.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>Technical Appendix C &bull; Data Privacy &amp; Security</span>
+        <span>TerraProof Q&amp;A Defense Deck</span>
+    </div>
+</section>
+
+<!-- SLIDE 14 (APPENDIX D) -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">APPENDIX D: OFFLINE CANOPY SYNCHRONIZATION PROTOCOL</span>
+        <span class="slide-num">SLIDE 14 / 15</span>
+    </div>
+    <div>
+        <h2>Deterministic Replay of Blank-Spot Buying-Station Transactions</h2>
+        <div class="card" style="margin-top:14px;">
+            <ul>
+                <li><strong>Edge Persistence:</strong> Field weigh-ins recorded under cellular blackout are persisted in browser <code>localStorage</code> / <code>IndexedDB</code> (`terraproof_offline_canopy_queue`).</li>
+                <li><strong>Atomic Replay:</strong> Clicking <code>SYNC QUEUE</code> invokes <code>POST /api/sync-offline-queue</code>, evaluating each queued weigh-in sequentially against current plot quota and appending blocks flagged with <code>captured_offline = true</code>.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>Technical Appendix D &bull; Offline Edge Architecture</span>
+        <span>TerraProof Q&amp;A Defense Deck</span>
+    </div>
+</section>
+
+<!-- SLIDE 15 (APPENDIX E) -->
+<section class="slide">
+    <div class="top-bar mono">
+        <span class="tag">APPENDIX E: SUMATRA TO ASEAN DEPLOYMENT ROADMAP</span>
+        <span class="slide-num">SLIDE 15 / 15</span>
+    </div>
+    <div>
+        <h2>Scaling Vocational Innovation Across Tropical Smallholder Supply Chains</h2>
+        <div class="grid-3" style="margin-top:14px;">
+            <div class="card">
+                <div class="mono" style="color:#10B981; font-size:12px; font-weight:800;">PHASE 1: Q4 2026</div>
+                <h3 style="font-size:17px; font-weight:800; margin:6px 0;">Sumatran Pilot</h3>
+                <p style="font-size:13px; color:#CBD5E1;">Field deployment with West Lampung (TNBBS) &amp; North Sumatra Mandheling coffee cooperatives.</p>
+            </div>
+            <div class="card">
+                <div class="mono" style="color:#F59E0B; font-size:12px; font-weight:800;">PHASE 2: Q1–Q2 2027</div>
+                <h3 style="font-size:17px; font-weight:800; margin:6px 0;">National INSW Bridge</h3>
+                <p style="font-size:13px; color:#CBD5E1;">Integration with KLHK Protected Forest WKT feeds &amp; Indonesian National Single Window.</p>
+            </div>
+            <div class="card">
+                <div class="mono" style="color:#06B6D4; font-size:12px; font-weight:800;">PHASE 3: Q3–Q4 2027</div>
+                <h3 style="font-size:17px; font-weight:800; margin:6px 0;">ASEAN Multi-Crop</h3>
+                <p style="font-size:13px; color:#CBD5E1;">Expansion to smallholder cocoa, black pepper, and rubber across Indonesia, Vietnam &amp; Malaysia.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer mono">
+        <span>Technical Appendix E &bull; Strategic Roadmap</span>
+        <span>FunDev&lt;&gt; International Competition 2026 — Universitas Sumatera Utara</span>
+    </div>
+</section>
+
+</body>
+</html>

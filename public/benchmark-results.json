@@ -1,0 +1,39 @@
+{
+    "generated_at": "2026-10-18T04:39:16+00:00",
+    "environment": {
+        "php_version": "8.5.3",
+        "laravel_version": "13.30.1",
+        "spatial_region": "West Lampung & Tanggamus \u2014 Bukit Barisan Selatan National Park (TNBBS) Corridor"
+    },
+    "benchmark_1_gps_spike_sanitizer": {
+        "synthetic_tracks_tested": 50,
+        "total_spikes_injected": 199,
+        "total_spikes_stripped": 199,
+        "spike_stripping_recall_pct": 100,
+        "mean_area_distortion_before_pct": 30.67,
+        "mean_area_distortion_after_pct": 0,
+        "rfc7946_ring_validity_pct": 100,
+        "mean_latency_ms": 0.57
+    },
+    "benchmark_2_spatial_conflict_clipping": {
+        "polygons_audited": 50,
+        "correct_classifications": 50,
+        "classification_accuracy_pct": 100,
+        "mean_latency_ms": 3.44,
+        "p95_latency_ms": 4.94
+    },
+    "benchmark_3_biological_anti_laundering": {
+        "total_transactions_tested": 100,
+        "valid_harvests_tested": 70,
+        "laundering_injections_tested": 30,
+        "true_positives": 30,
+        "true_negatives": 70,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision_pct": 100,
+        "recall_pct": 100,
+        "mean_hash_latency_ms": 0.0058,
+        "seeded_ledger_chain_intact": true,
+        "seeded_ledger_total_records": 25
+    }
+}

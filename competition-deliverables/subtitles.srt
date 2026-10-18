@@ -1,0 +1,51 @@
+1
+00:00:00,000 --> 00:00:12,000
+Under the European Union Deforestation Regulation, 2.5 million Indonesian smallholder coffee and cocoa farmers face immediate export exclusion unless every farm plot is verified with six-decimal geodesic polygons.
+
+2
+00:00:12,000 --> 00:00:25,000
+Yet in tropical Sumatra, existing compliance tools fail smallholders in two critical ways: canopy GPS multipath distortion and cross-plot quota laundering.
+
+3
+00:00:25,000 --> 00:00:40,000
+First, walking under dense shade trees causes smartphone GPS multipath reflections—jumping forty to fifty meters in a single second and inflating farm area by over thirty percent.
+
+4
+00:00:40,000 --> 00:00:55,000
+Watch TerraProof's Geodesic Audit Service in action: our kinematic velocity and eighteen-degree interior deflection filter strips all four canopy spikes in half a millisecond, restoring exact WGS84 geodesic area.
+
+5
+00:00:55,000 --> 00:01:10,000
+Next, TerraProof projects surviving coordinates onto a local tangent plane and executes Sutherland-Hodgman polygon clipping against Bukit Barisan Selatan National Park and neighboring plots.
+
+6
+00:01:10,000 --> 00:01:25,000
+When a polygon encroaches across the UNESCO rainforest boundary, TerraProof computes the exact crimson intersection slice down to the square meter and locks the plot from export.
+
+7
+00:01:25,000 --> 00:01:42,000
+Second, static satellite maps cannot stop Polygon Laundering—where brokers smuggle illegal National Park coffee through a tiny compliant boundary plot. TerraProof closes this loophole with our Biological Yield-Ceiling Engine.
+
+8
+00:01:42,000 --> 00:01:54,000
+Using geodesic area, tree density, physiological tree age, and volcanic elevation, we compute the exact annual biological ceiling Y-max. A legitimate 220-kilogram weigh-in is approved and chained via SHA-256.
+
+9
+00:01:54,000 --> 00:02:05,000
+But when an attacker tries to launder 1,600 kilograms through a plot with only 120 kilograms of remaining quota, TerraProof mathematically intercepts the breach and protects the export container.
+
+10
+00:02:05,000 --> 00:02:20,000
+Because rural Sumatran buying stations operate in cellular blank spots, TerraProof runs offline-first—queueing field audits and weigh-ins locally in browser storage under the forest canopy.
+
+11
+00:02:20,000 --> 00:02:35,000
+With a single click once connectivity returns, the offline queue synchronizes directly into the tamper-evident MySQL and SQLite cryptographic ledger.
+
+12
+00:02:35,000 --> 00:02:48,000
+Finally, our Export Compiler aggregates approved harvest hashes into a binary SHA-256 Merkle Root and generates a strict RFC 7946 GeoJSON FeatureCollection for European Commission Traces-NT upload.
+
+13
+00:02:48,000 --> 00:03:00,000
+Advancing UN SDGs 2, 1, 17, and 15 at zero cost to smallholder farmers—this is TerraProof: mathematical truth for sustainable global trade.
