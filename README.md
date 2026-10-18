@@ -5,7 +5,10 @@
 [![GeoJSON Standard](https://img.shields.io/badge/Standard-RFC_7946_CRS84_(6--Decimal)-F59E0B?style=for-the-badge)](https://datatracker.ietf.org/doc/html/rfc7946)
 [![Tests](https://img.shields.io/badge/PHPUnit_%26_Benchmark-100%25_PASS_(74_Assertions)-10B981?style=for-the-badge)](#6-empirical-benchmark-evidence-php-artisan-terraproofbenchmark)
 [![SDGs](https://img.shields.io/badge/UN_SDGs-SDG_2_%7C_SDG_1_%7C_SDG_17_%7C_SDG_15-3B82F6?style=for-the-badge)](#7-un-sustainable-development-goals-sdg-impact-matrix)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Railway-0B0D0E?style=for-the-badge&logo=railway)](https://terraproof-production.up.railway.app)
 
+> **Live Demo:** https://terraproof-production.up.railway.app
+>
 > **Flagship Entry — FunDev<> International Competition 2026 (D3 Informatics Engineering, Faculty of Vocational Studies, Universitas Sumatera Utara)**  
 > **Case Study Corridor:** West Lampung (*Sumber Jaya, Balik Bukit, Way Tenong*) & Tanggamus (*Ulubelu*) Agro-Forestry Corridor bordering **Bukit Barisan Selatan National Park (TNBBS — UNESCO World Heritage Rainforest)**, Sumatra, Indonesia.
 
